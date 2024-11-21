@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 import { RiMenuFoldFill } from "react-icons/ri";
 import { useContext } from 'react';
 import { ShopContext } from '../../Context/Context';
+import { Cart, Favorite } from './Cart_Favorite';
 
 function Header() {
 
@@ -26,22 +27,8 @@ function Header() {
         </div>
         <div className='flex items-center justify-between gap-4 max-[640px]:hidden'>
           <Header_Input />
-          <div className='relative'>
-            <GrFavorite className='w-10 h-6 cursor-pointer' />
-            {favorite.length === 0? '': <div className='w-5 h-5  absolute -top-3 -right-1  rounded-full flex justify-center items-center text-white font-semibold bg-red-500'>
-              <span className='text-[13px]'>{favorite.length}</span>
-
-            </div>}
-          </div>
-          <div className='relative'>
-            <AiOutlineShoppingCart className='w-10 h-6 cursor-pointer' />
-            {
-              addToCart.length === 0 ? '' : <div className='w-5 h-5  absolute -top-3 -right-1  rounded-full flex justify-center items-center text-white font-semibold bg-red-500'>
-                <span className='text-[13px]'>{addToCart.length}</span>
-
-            </div>
-            }
-          </div>
+          <Favorite />
+          <Cart /> 
         </div>
         <RiMenuFoldFill className='hidden max-[640px]:block w-10 h-7' />
 

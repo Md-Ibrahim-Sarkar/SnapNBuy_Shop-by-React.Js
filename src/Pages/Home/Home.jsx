@@ -1,6 +1,7 @@
 import LeftItem from "./Banner/LeftItem"
 import RightItem from "./Banner/RightItem"
 import FlashSales from "./FlashSales/FlashSales"
+import Arrival from "./New_Arrival/Arrival"
 
 
 function Home() {
@@ -11,6 +12,7 @@ function Home() {
         <RightItem />
       </div>
       <FlashSales />
+      <Arrival />
     </div>
   )
 }

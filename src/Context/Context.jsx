@@ -13,7 +13,8 @@ export const ContextProvider = ({ children }) => {
 
     const [flashData, setFlashData] = useState([])
     const [addToCart,setAddToCart] = useState([])
-    const [favorite,setFavorite] = useState([])
+    const [favorite, setFavorite] = useState([])
+    const [onOpen,setOnOpen] = useState(false)
 
  console.log(addToCart);
  
@@ -34,7 +35,9 @@ export const ContextProvider = ({ children }) => {
         addToCart,
         setAddToCart,
         favorite,
-        setFavorite
+        setFavorite,
+        onOpen,
+        setOnOpen
     }
 console.log(favorite);
 
