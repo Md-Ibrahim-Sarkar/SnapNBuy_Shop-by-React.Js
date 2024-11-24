@@ -18,7 +18,7 @@ function Arrival() {
                 <div className=" px-4 lg:px-0 w-96 sm:w-auto">
                     <div className="lg:flex items-stretch ">
                         <div className="lg:w-1/2">
-                            <div className="sm:flex  justify-between xl:gap-x-8 gap-x-6">
+                            <div className="sm:flex  justify-between gap-x-6">
                                 <div className="sm:w-1/2 relative">
                                     <div>
                                         <p className="p-6 text-xs font-medium leading-3 text-white absolute top-0 right-0">12 April 2021</p>

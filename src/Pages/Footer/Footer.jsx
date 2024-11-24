@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable react/no-unknown-property */
 import { BiSend } from "react-icons/bi";
+import logo from '../../assets/Images/logo.png'
 
 const Footer = () => {
     return (
@@ -12,15 +13,11 @@ const Footer = () => {
                             <div className="mb-10 w-full">
                                 <a href="/#" className="mb-6 inline-block max-w-[160px]">
                                     <img
-                                        src="https://cdn.tailgrids.com/2.0/image/assets/images/logo/logo.svg"
+                                        src={logo}
                                         alt="logo"
-                                        className="max-w-full dark:hidden"
+                                        className="max-w-full"
                                     />
-                                    <img
-                                        src="https://cdn.tailgrids.com/2.0/image/assets/images/logo/logo-white.svg"
-                                        alt="logo"
-                                        className="max-w-full hidden dark:block"
-                                    />
+                                    
                                 </a>
                                 <p className="mb-7 text-justify text-base text-body-color dark:text-dark-6">
                                 At SnapNBuy, we bring you a curated selection of premium products at unbeatable prices. Whether you’re looking for the latest gadgets, stylish apparel, or everyday essentials, we’ve got something for everyone.
