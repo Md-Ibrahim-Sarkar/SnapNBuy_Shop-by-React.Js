@@ -4,6 +4,7 @@ import { MdFavoriteBorder } from "react-icons/md";
 import { FiEye } from "react-icons/fi";
 import { useContext } from 'react';
 import { ShopContext } from '../../../Context/Context';
+import { Link } from 'react-router-dom';
 
 function FlashItem({ data }) {
 
@@ -34,14 +35,14 @@ function FlashItem({ data }) {
     }
 
     return (
-        <div className="mt-10 group relative">
+        <div className="relative mt-10 group">
             {/* Product Card */}
             <div className="relative xl:w-[300px] lg:w-[230px] h-[250px] flex justify-center items-center bg-[#F5F5F5]">
                 {/* Product Image */}
                 <img className="w-3/6" src={data.image} alt={data.title} />
 
                 {/* Discount Badge */}
-                <div className="absolute top-3 left-3 w-16 h-9 bg-main-color rounded-lg flex justify-center items-center text-white">
+                <div className="absolute flex items-center justify-center w-16 text-white rounded-lg top-3 left-3 h-9 bg-main-color">
                     <span>-40%</span>
                 </div>
 
@@ -50,7 +51,7 @@ function FlashItem({ data }) {
                     <div onClick={favoriteHandler} className={`w-11 bg-withe  mb-1 flex justify-center items-center rounded-full h-11 cursor-pointer  transform transition-all ease-linear duration-300 ${favorite.find(item => item.id === data.id)? 'bg-rose-500': 'bg-white'}`}>
                         <MdFavoriteBorder className={`w-8 h-8 ${favorite.find(item => item.id === data.id)? 'text-white': ''}`} />
                     </div>
-                    <div className="w-11 bg-white mb-1 flex justify-center items-center rounded-full h-11 cursor-pointer hover:bg-slate-300 transform transition-all ease-linear duration-300">
+                    <div className="flex items-center justify-center mb-1 transition-all duration-300 ease-linear transform bg-white rounded-full cursor-pointer w-11 h-11 hover:bg-slate-300">
                         <FiEye className="w-8 h-8" />
                     </div>
                 </div>
@@ -70,12 +71,16 @@ function FlashItem({ data }) {
                     {data.title.length > 20 ? `${data.title.slice(0, 20)}...` : data.title}
                 </h3>
                 {/* Price */}
-                <div className="mt-2 flex gap-3">
+                <div className="flex gap-3 mt-2">
+                  
                     <span>${data.price}</span>
                     <span className="line-through">${(data.price - 10).toFixed(2)}</span>
+                   
+                   
                 </div>
+                <Link to={`/Products/:${data.id}`} className='text-red-400 hover:underline'>Details</Link>
                 {/* Ratings */}
-                <div className="flex gap-1 items-center text-orange-300 mt-2">
+                <div className="flex items-center gap-1 mt-2 text-orange-300">
                     <FaStar />
                     <FaStar />
                     <FaStar />

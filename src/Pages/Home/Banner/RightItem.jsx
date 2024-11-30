@@ -14,7 +14,7 @@ export default function RightItem() {
 
 
     return (
-        <div className=' col-span-9 mt-10'>
+        <div className=' col-span-9 max-[780px]:col-span-12 mt-10'>
             <Swiper
                 spaceBetween={30}
                 centeredSlides={true}

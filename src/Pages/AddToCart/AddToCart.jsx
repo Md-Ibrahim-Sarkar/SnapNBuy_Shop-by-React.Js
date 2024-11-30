@@ -20,8 +20,8 @@ const AddToCart = () => {
     );
 
     return (
-        <div className="container mx-auto px-4 py-8 mt-20">
-            <h2 className="text-xl font-semibold mb-4">Cart</h2>
+        <div className="container px-4 py-8 mx-auto mt-20">
+            <h2 className="mb-4 text-xl font-semibold">Cart</h2>
             <div className="">
                 {/* Cart Items Section */}
                 <div className="flex-1">
@@ -40,25 +40,25 @@ const AddToCart = () => {
                         </tbody>
                     </table>
 
-                    <div className="flex flex-col lg:flex-row gap-8">
+                    <div className="flex flex-col gap-8 lg:flex-row">
                         <div className="w-full">
-                            <div className="flex justify-between items-center mt-4">
-                                <Link to={'/'} className="bg-gray-200 px-4 py-2 rounded">Return To Shop</Link>
-                                <button className="bg-gray-200 px-4 py-2 rounded">Update Cart</button>
+                            <div className="flex items-center justify-between mt-4">
+                                <Link to={'/'} className="px-4 py-2 bg-gray-200 rounded">Return To Shop</Link>
+                                <button className="px-4 py-2 bg-gray-200 rounded">Update Cart</button>
                             </div>
-                            <div className="mt-4 flex items-center gap-4">
+                            <div className="flex items-center gap-4 mt-4">
                                 <input
                                     type="text"
                                     placeholder="Coupon Code"
-                                    className="border px-4 py-2 rounded flex-1"
+                                    className="flex-1 px-4 py-2 border rounded"
                                 />
-                                <button className="bg-red-500 text-white px-4 py-2 rounded">Apply Coupon</button>
+                                <button className="px-4 py-2 text-white bg-red-500 rounded">Apply Coupon</button>
                             </div>
                         </div>
 
                         {/* Cart Summary Section */}
-                        <div className="w-full lg:w-1/3 border p-4 rounded-md">
-                            <h3 className="text-lg font-semibold mb-4">Cart Total</h3>
+                        <div className="w-full p-4 border rounded-md lg:w-1/3">
+                            <h3 className="mb-4 text-lg font-semibold">Cart Total</h3>
                             <div className="flex justify-between mb-2">
                                 <span>Subtotal:</span>
                                 <span>${subtotal}</span>
@@ -67,13 +67,13 @@ const AddToCart = () => {
                                 <span>Shipping:</span>
                                 <span>Free</span>
                             </div>
-                            <div className="flex justify-between font-bold text-lg">
+                            <div className="flex justify-between mb-4 text-lg font-bold">
                                 <span>Total:</span>
                                 <span>${subtotal}</span>
                             </div>
-                            <button className="mt-4 w-full bg-red-500 text-white px-4 py-2 rounded">
+                            <Link to={'/billing-details'} className="w-full px-4 py-2 mt-4 text-white bg-red-500 rounded">
                                 Proceed to Checkout
-                            </button>
+                            </Link>
                         </div>
                     </div>
                 </div>

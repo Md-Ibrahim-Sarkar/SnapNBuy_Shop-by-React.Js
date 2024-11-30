@@ -18,6 +18,35 @@ function FlashSales() {
   const swiperRef = useRef(null);
 
   const handleSwiperClick = () => setIsAutoplay(!isAutoplay);
+  const [value, setValue] = useState(4)
+  
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.matchMedia("(max-width: 1024px)").matches) {
+        setValue(2); // Set value to 2 for max-[1024px] devices
+      }
+      if (window.matchMedia("(max-width: 780px)").matches) {
+        setValue(1); // Set value to 1 for max-[780px] devices
+      }
+      else {
+        setValue(4); // Reset to default value otherwise
+      }
+    };
+
+    // Initial check
+    handleResize();
+
+    // Add event listener for resize
+    window.addEventListener("resize", handleResize);
+
+    // Cleanup the event listener on component unmount
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []); // Empty dependency array ensures it runs once on mount
+
+
 
   // Timer functionality
   const [timeLeft, setTimeLeft] = useState({
@@ -53,12 +82,12 @@ function FlashSales() {
   return (
     <div className="mt-16">
       <div className="flex items-center gap-4">
-        <div className="w-6 h-11 rounded-md bg-main-color"></div>
+        <div className="w-6 rounded-md h-11 bg-main-color"></div>
         <span className="font-bold text-main-color">Today's</span>
       </div>
-      <div className="flex justify-between items-center">
-        <div className="flex gap-10">
-          <h2 className="text-4xl py-5 pb-0">Flash Sales</h2>
+      <div className="flex items-center justify-between">
+        <div className="flex gap-10 max-[780px]:flex-col">
+          <h2 className="py-5 pb-0 text-4xl">Flash Sales</h2>
           {/* Timer */}
           <div className="flex gap-4 text-center">
             {Object.entries(timeLeft).map(([key, value], index) => (
@@ -69,15 +98,15 @@ function FlashSales() {
             ))}
           </div>
         </div>
-        <div className="flex gap-6">
+        <div className="flex gap-6 max-[780px]:hidden">
           <div
-            className="bg-gray-200 w-14 h-14 rounded-full flex justify-center items-center cursor-pointer hover:bg-gray-500 transform transition-all ease-linear duration-300"
+            className="flex items-center justify-center transition-all duration-300 ease-linear transform bg-gray-200 rounded-full cursor-pointer w-14 h-14 hover:bg-gray-500"
             onClick={() => swiperRef.current?.slidePrev()}
           >
             <FaLongArrowAltLeft className="w-7 h-7" />
           </div>
           <div
-            className="bg-gray-200 w-14 h-14 rounded-full flex justify-center items-center cursor-pointer hover:bg-gray-500 transform transition-all ease-linear duration-300"
+            className="flex items-center justify-center transition-all duration-300 ease-linear transform bg-gray-200 rounded-full cursor-pointer w-14 h-14 hover:bg-gray-500"
             onClick={() => swiperRef.current?.slideNext()}
           >
             <FaLongArrowAltRight className="w-7 h-7" />
@@ -85,18 +114,18 @@ function FlashSales() {
         </div>
       </div>
       <Swiper
-        slidesPerView={4}
+        slidesPerView={value}
         spaceBetween={0}
         freeMode={true}
         autoplay={isAutoplay ? { delay: 3000, disableOnInteraction: false } : false}
         pagination={{ clickable: true }}
         modules={[FreeMode, Pagination, Autoplay]}
-        className="mySwiper"
+        className="mySwiper "
         onClick={handleSwiperClick}
         onSwiper={(swiper) => (swiperRef.current = swiper)}
       >
         {flashData.length === 0 ? (
-          <p className="text-center py-10">No flash sale items available</p>
+          <p className="py-10 text-center">No flash sale items available</p>
         ) : (
           flashData.map((item) => (
             <SwiperSlide key={item.id}>

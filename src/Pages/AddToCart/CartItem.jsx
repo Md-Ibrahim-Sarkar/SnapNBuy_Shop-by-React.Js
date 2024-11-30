@@ -18,11 +18,11 @@ function CartItem({ item }) {
 
   return (
     <tr key={item.id} className="border-b">
-      <td className="py-2 flex items-center gap-4">
+      <td className="flex items-center gap-4 py-2">
         <img
           src={item.image}
           alt={item.name}
-          className="w-16 h-16 object-cover rounded"
+          className="object-cover w-16 h-16 rounded"
         />
         {item.name}
       </td>
@@ -31,7 +31,7 @@ function CartItem({ item }) {
         <select
           value={item.quantity}
           onChange={(e) => handleQuantityChange(item.id, Number(e.target.value))}
-          className="border rounded px-2 py-1"
+          className="px-2 py-1 border rounded"
         >
           {[...Array(10).keys()].map((q) => (
             <option key={q + 1} value={q + 1}>

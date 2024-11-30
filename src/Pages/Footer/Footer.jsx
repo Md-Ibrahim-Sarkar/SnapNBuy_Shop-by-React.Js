@@ -8,9 +8,9 @@ const Footer = () => {
         <>
             <footer className="relative z-10 bg-black text-white pb-10 pt-20 dark:bg-dark lg:pb-10 lg:pt-[50px] mt-8">
                 <div className="container mx-auto">
-                    <div className="-mx-4 flex flex-wrap">
-                        <div className="w-full px-4 sm:w-2/3 lg:w-3/12">
-                            <div className="mb-10 w-full">
+                    <div className="flex flex-wrap ">
+                        <div className="max-w-[250px] px-4">
+                            <div className="w-full mb-10">
                                 <a href="/#" className="mb-6 inline-block max-w-[160px]">
                                     <img
                                         src={logo}
@@ -19,7 +19,7 @@ const Footer = () => {
                                     />
                                     
                                 </a>
-                                <p className="mb-7 text-justify text-base text-body-color dark:text-dark-6">
+                                <p className="text-base text-justify mb-7 text-body-color dark:text-dark-6">
                                 At SnapNBuy, we bring you a curated selection of premium products at unbeatable prices. Whether you’re looking for the latest gadgets, stylish apparel, or everyday essentials, we’ve got something for everyone.
                                 </p>
                                 <p className="flex items-center text-sm font-medium text-dark dark:text-white">
@@ -77,14 +77,14 @@ const Footer = () => {
                         </LinkGroup>
 
                         <div className="w-full px-4 sm:w-1/2 lg:w-3/12">
-                            <div className="mb-10 w-full">
-                                <h4 className="mb-9 text-lg font-semibold text-dark dark:text-white">
+                            <div className="w-full mb-10">
+                                <h4 className="text-lg font-semibold mb-9 text-dark dark:text-white">
                                     Follow Us On
                                 </h4>
-                                <div className="mb-6 flex items-center">
+                                <div className="flex items-center mb-6">
                                     <a
                                         href="javascript:void(0)"
-                                        className="mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-stroke text-dark hover:border-primary hover:bg-primary hover:text-white dark:border-dark-3 dark:text-white dark:hover:border-primary sm:mr-4 lg:mr-3 xl:mr-4"
+                                        className="flex items-center justify-center w-8 h-8 mr-3 border rounded-full border-stroke text-dark hover:border-primary hover:bg-primary hover:text-white dark:border-dark-3 dark:text-white dark:hover:border-primary sm:mr-4 lg:mr-3 xl:mr-4"
                                     >
                                         <svg
                                             width="8"
@@ -97,7 +97,7 @@ const Footer = () => {
                                     </a>
                                     <a
                                         href="javascript:void(0)"
-                                        className="mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-stroke text-dark hover:border-primary hover:bg-primary hover:text-white dark:border-dark-3 dark:text-white dark:hover:border-primary sm:mr-4 lg:mr-3 xl:mr-4"
+                                        className="flex items-center justify-center w-8 h-8 mr-3 border rounded-full border-stroke text-dark hover:border-primary hover:bg-primary hover:text-white dark:border-dark-3 dark:text-white dark:hover:border-primary sm:mr-4 lg:mr-3 xl:mr-4"
                                     >
                                         <svg
                                             width="16"
@@ -110,7 +110,7 @@ const Footer = () => {
                                     </a>
                                     <a
                                         href="javascript:void(0)"
-                                        className="mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-stroke text-dark hover:border-primary hover:bg-primary hover:text-white dark:border-dark-3 dark:text-white dark:hover:border-primary sm:mr-4 lg:mr-3 xl:mr-4"
+                                        className="flex items-center justify-center w-8 h-8 mr-3 border rounded-full border-stroke text-dark hover:border-primary hover:bg-primary hover:text-white dark:border-dark-3 dark:text-white dark:hover:border-primary sm:mr-4 lg:mr-3 xl:mr-4"
                                     >
                                         <svg
                                             width="16"
@@ -123,7 +123,7 @@ const Footer = () => {
                                     </a>
                                     <a
                                         href="javascript:void(0)"
-                                        className="mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-stroke text-dark hover:border-primary hover:bg-primary hover:text-white dark:border-dark-3 dark:text-white dark:hover:border-primary sm:mr-4 lg:mr-3 xl:mr-4"
+                                        className="flex items-center justify-center w-8 h-8 mr-3 border rounded-full border-stroke text-dark hover:border-primary hover:bg-primary hover:text-white dark:border-dark-3 dark:text-white dark:hover:border-primary sm:mr-4 lg:mr-3 xl:mr-4"
                                     >
                                         <svg
                                             width="14"
@@ -138,8 +138,8 @@ const Footer = () => {
                                 <div >
                                     <label className="text-xl uppercase" htmlFor="email">Subscribe</label>
                                     <p>Get 10% off your first order</p>
-                                    <div className=" border flex items-center mt-3 rounded-lg">
-                                    <input className="block w-full py-3 px-3 rounded-lg bg-black focus:outline-none " type="text" />
+                                    <div className="flex items-center mt-3 border rounded-lg ">
+                                    <input className="block w-full px-3 py-3 bg-black rounded-lg focus:outline-none " type="text" />
                                     <BiSend className="w-9 h-9 me-3" />
                                    </div>
                                 </div>
@@ -205,8 +205,8 @@ const Footer = () => {
                 </div>
 
 
-                <footer className=" rounded-lg shadow m-4 container mx-auto">
-                    <div className="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
+                <footer className="container m-4 mx-auto rounded-lg shadow ">
+                    <div className="w-full max-w-screen-xl p-4 mx-auto md:flex md:items-center md:justify-between">
                         <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 <a href="https://flowbite.com/" className="hover:underline">SnapNBuy Shop™</a>. All Rights Reserved.
                         </span>
                         <ul className="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
@@ -237,8 +237,8 @@ const LinkGroup = ({ children, header }) => {
     return (
         <>
             <div className="w-full px-4 sm:w-1/2 lg:w-2/12">
-                <div className="mb-10 w-full">
-                    <h4 className="mb-9 text-lg font-semibold text-dark dark:text-white">
+                <div className="w-full mb-10">
+                    <h4 className="text-lg font-semibold mb-9 text-dark dark:text-white">
                         {header}
                     </h4>
                     <ul className="space-y-3">{children}</ul>

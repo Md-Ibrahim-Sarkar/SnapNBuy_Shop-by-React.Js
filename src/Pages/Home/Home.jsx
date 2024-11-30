@@ -1,7 +1,12 @@
+import Category from "./category/Category"
 import LeftItem from "./Banner/LeftItem"
 import RightItem from "./Banner/RightItem"
 import FlashSales from "./FlashSales/FlashSales"
 import Arrival from "./New_Arrival/Arrival"
+import BestSelling from "./best_Selling/BestSelling"
+import MusicExperience from "./musicExperience/MusicExperience"
+import OurProducts from "./our_Products/OurProducts"
+import Support from "./support/Support"
 
 
 function Home() {
@@ -12,7 +17,13 @@ function Home() {
         <RightItem />
       </div>
       <FlashSales />
+      <Category />
+      <hr />
+      <BestSelling />
+      <MusicExperience />
+      <OurProducts />
       <Arrival />
+      <Support />
     </div>
   )
 }

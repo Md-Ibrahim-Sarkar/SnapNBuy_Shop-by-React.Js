@@ -12,6 +12,8 @@ export const ContextProvider = ({ children }) => {
 
 
     const [flashData, setFlashData] = useState([])
+    const [bestSelling, setBestSelling] = useState([])
+    const [ourProduct, setOurProduct] = useState([])
     const [addToCart,setAddToCart] = useState([])
     const [favorite, setFavorite] = useState([])
     const [onOpen,setOnOpen] = useState(false)
@@ -26,6 +28,26 @@ export const ContextProvider = ({ children }) => {
             
         }
         todayData()
+    }, [])
+    
+    useEffect(() => {
+        async function todayData() {
+            let data = await axios.get('https://fakestoreapi.com/products?limit=4')
+
+            setBestSelling(data.data);
+            
+        }
+        todayData()
+    }, [])
+    
+    useEffect(() => {
+        async function todayData() {
+            let data = await axios.get('https://fakestoreapi.com/products?limit=8')
+
+            setOurProduct(data.data);
+            
+        }
+        todayData()
     },[])
     
 
@@ -37,7 +59,9 @@ export const ContextProvider = ({ children }) => {
         favorite,
         setFavorite,
         onOpen,
-        setOnOpen
+        setOnOpen,
+        bestSelling,
+        ourProduct
     }
 console.log(favorite);
 

@@ -3,7 +3,7 @@ import { MdOutlineNavigateNext } from "react-icons/md";
 
 function LeftItem() {
   return (
-      <div className="col-span-3 px-4 mt-10 ">
+      <div className="col-span-3 max-[780px]:hidden px-4 mt-10 lg:col ">
           <ul className="text-base">
               <li className="flex justify-between items-center cursor-pointer xl:mb-5 lg:py-1.5 lg:px-1.5 rounded hover:bg-[#F5F5F5]"><a href="#">Woman’s Fashion </a><span><MdOutlineNavigateNext className="w-6 h-5" /></span></li>
               <li className="flex justify-between items-center cursor-pointer xl:mb-5 lg:py-1.5 lg:px-1.5 rounded hover:bg-[#F5F5F5]"><a href="#">Men’s Fashion </a><span><MdOutlineNavigateNext className="w-6 h-5" /></span></li>

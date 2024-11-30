@@ -6,26 +6,26 @@ function Arrival() {
     return (
 
         <div className="container mx-auto mt-14">
-            <div className="flex gap-4 items-center">
-                <div className="w-4 h-7 bg-red-600 rounded">
+            <div className="flex items-center gap-4">
+                <div className="w-4 bg-red-600 rounded h-7">
 
                 </div>
                 <span>Featured</span>
             </div>
-            <h1 className="text-4xl font-semibold leading-9 my-5  text-gray-800 ">New Arrival</h1>
-            <div className="flex justify-center items-center ">
+            <h1 className="my-5 text-4xl font-semibold leading-9 text-gray-800 ">New Arrival</h1>
+            <div className="">
             
-                <div className=" px-4 lg:px-0 w-96 sm:w-auto">
-                    <div className="lg:flex items-stretch ">
+                <div className="px-4 lg:px-0 sm:w-auto">
+                    <div className="items-stretch lg:flex ">
                         <div className="lg:w-1/2">
-                            <div className="sm:flex  justify-between gap-x-6">
-                                <div className="sm:w-1/2 relative">
+                            <div className="justify-between sm:flex gap-x-6">
+                                <div className="relative sm:w-1/2">
                                     <div>
-                                        <p className="p-6 text-xs font-medium leading-3 text-white absolute top-0 right-0">12 April 2021</p>
+                                        <p className="absolute top-0 right-0 p-6 text-xs font-medium leading-3 text-white">12 April 2021</p>
                                         <div className="absolute bottom-0 left-0 p-6">
-                                            <h2 className="text-xl font-semibold 5 text-white">The Decorated Ways</h2>
-                                            <p className="text-base leading-4 text-white mt-2">Dive into minimalism</p>
-                                            <a href="javascript:void(0)" className="focus:outline-none focus:underline flex items-center mt-4 cursor-pointer text-white hover:text-gray-200 hover:underline">
+                                            <h2 className="text-xl font-semibold text-white 5">The Decorated Ways</h2>
+                                            <p className="mt-2 text-base leading-4 text-white">Dive into minimalism</p>
+                                            <a href="javascript:void(0)" className="flex items-center mt-4 text-white cursor-pointer focus:outline-none focus:underline hover:text-gray-200 hover:underline">
                                                 <p className="pr-2 text-sm font-medium leading-none">Read More</p>
                                                 <svg className="fill-stroke" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M5.75 12.5L10.25 8L5.75 3.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -35,13 +35,13 @@ function Arrival() {
                                     </div>
                                     <img src="https://i.ibb.co/DYxtCJq/img-1.png" className="w-full" alt="chair" />
                                 </div>
-                                <div className="sm:w-1/2 cursor-pointer sm:mt-0 mt-4 relative">
+                                <div className="relative mt-4 cursor-pointer sm:w-1/2 sm:mt-0">
                                     <div>
-                                        <p className="p-6 text-xs font-medium leading-3 text-white absolute top-0 right-0">12 April 2021</p>
+                                        <p className="absolute top-0 right-0 p-6 text-xs font-medium leading-3 text-white">12 April 2021</p>
                                         <div className="absolute bottom-0 left-0 p-6">
-                                            <h2 className="text-xl font-semibold 5 text-white">The Decorated Ways</h2>
-                                            <p className="text-base leading-4 text-white mt-2">Dive into minimalism</p>
-                                            <a href="javascript:void(0)" className="focus:outline-none focus:underline flex items-center mt-4 cursor-pointer text-white hover:text-gray-200 hover:underline">
+                                            <h2 className="text-xl font-semibold text-white 5">The Decorated Ways</h2>
+                                            <p className="mt-2 text-base leading-4 text-white">Dive into minimalism</p>
+                                            <a href="javascript:void(0)" className="flex items-center mt-4 text-white cursor-pointer focus:outline-none focus:underline hover:text-gray-200 hover:underline">
                                                 <p className="pr-2 text-sm font-medium leading-none">Read More</p>
                                                 <svg className="fill-stroke" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M5.75 12.5L10.25 8L5.75 3.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -54,11 +54,11 @@ function Arrival() {
                             </div>
                             <div className="relative cursor-pointer">
                                 <div>
-                                    <p className="md:p-10 p-6 text-xs font-medium leading-3 text-white absolute top-0 right-0">12 April 2021</p>
-                                    <div className="absolute bottom-0 left-0 md:p-10 p-6">
-                                        <h2 className="text-xl font-semibold 5 text-white">The Decorated Ways</h2>
-                                        <p className="text-base leading-4 text-white mt-2">Dive into minimalism</p>
-                                        <a href="javascript:void(0)" className="focus:outline-none focus:underline flex items-center mt-4 cursor-pointer text-white hover:text-gray-200 hover:underline">
+                                    <p className="absolute top-0 right-0 p-6 text-xs font-medium leading-3 text-white md:p-10">12 April 2021</p>
+                                    <div className="absolute bottom-0 left-0 p-6 md:p-10">
+                                        <h2 className="text-xl font-semibold text-white 5">The Decorated Ways</h2>
+                                        <p className="mt-2 text-base leading-4 text-white">Dive into minimalism</p>
+                                        <a href="javascript:void(0)" className="flex items-center mt-4 text-white cursor-pointer focus:outline-none focus:underline hover:text-gray-200 hover:underline">
                                             <p className="pr-2 text-sm font-medium leading-none">Read More</p>
                                             <svg className="fill-stroke" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M5.75 12.5L10.25 8L5.75 3.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -66,18 +66,18 @@ function Arrival() {
                                         </a>
                                     </div>
                                 </div>
-                                <img src="https://i.ibb.co/Ms4qyXp/img-3.png" alt="sitting place" className="w-full mt-8 md:mt-6 hidden sm:block" />
+                                <img src="https://i.ibb.co/Ms4qyXp/img-3.png" alt="sitting place" className="hidden w-full mt-8 md:mt-6 sm:block" />
                                 <img className="w-full mt-4 sm:hidden" src="https://i.ibb.co/6XYbN7f/Rectangle-29.png" alt="sitting place" />
                             </div>
                         </div>
-                        <div className="lg:w-1/2  xl:ml-8 lg:ml-4 lg:mt-0 md:mt-6 mt-4 lg:flex flex-col justify-between">
+                        <div className="flex-col justify-between mt-4 lg:w-1/2 xl:ml-8 lg:ml-4 lg:mt-0 md:mt-6 lg:flex">
                             <div className="relative cursor-pointer">
                                 <div>
-                                    <p className="md:p-10 p-6 text-xs font-medium leading-3 text-white absolute top-0 right-0">12 April 2021</p>
-                                    <div className="absolute bottom-0 left-0 md:p-10 p-6">
-                                        <h2 className="text-xl font-semibold 5 text-white">The Decorated Ways</h2>
-                                        <p className="text-base leading-4 text-white mt-2">Dive into minimalism</p>
-                                        <a href="javascript:void(0)" className="focus:outline-none focus:underline flex items-center mt-4 cursor-pointer text-white hover:text-gray-200 hover:underline">
+                                    <p className="absolute top-0 right-0 p-6 text-xs font-medium leading-3 text-white md:p-10">12 April 2021</p>
+                                    <div className="absolute bottom-0 left-0 p-6 md:p-10">
+                                        <h2 className="text-xl font-semibold text-white 5">The Decorated Ways</h2>
+                                        <p className="mt-2 text-base leading-4 text-white">Dive into minimalism</p>
+                                        <a href="javascript:void(0)" className="flex items-center mt-4 text-white cursor-pointer focus:outline-none focus:underline hover:text-gray-200 hover:underline">
                                             <p className="pr-2 text-sm font-medium leading-none">Read More</p>
                                             <svg className="fill-stroke" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M5.75 12.5L10.25 8L5.75 3.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -85,17 +85,17 @@ function Arrival() {
                                         </a>
                                     </div>
                                 </div>
-                                <img src="https://i.ibb.co/6Wfjf2w/img-4.png" alt="sitting place" className="w-full sm:block hidden" />
+                                <img src="https://i.ibb.co/6Wfjf2w/img-4.png" alt="sitting place" className="hidden w-full sm:block" />
                                 <img className="w-full sm:hidden" src="https://i.ibb.co/dpXStJk/Rectangle-29.png" alt="sitting place" />
                             </div>
-                            <div className="sm:flex items-center  justify-between xl:gap-x-8 gap-x-6 md:mt-6 mt-4">
+                            <div className="items-center justify-between mt-4 sm:flex xl:gap-x-8 gap-x-6 md:mt-6">
                                 <div className="relative w-full cursor-pointer">
                                     <div>
-                                        <p className="p-6 text-xs font-medium leading-3 text-white absolute top-0 right-0">12 April 2021</p>
+                                        <p className="absolute top-0 right-0 p-6 text-xs font-medium leading-3 text-white">12 April 2021</p>
                                         <div className="absolute bottom-0 left-0 p-6">
-                                            <h2 className="text-xl font-semibold 5 text-white">The Decorated Ways</h2>
-                                            <p className="text-base leading-4 text-white mt-2">Dive into minimalism</p>
-                                            <a href="javascript:void(0)" className="focus:outline-none focus:underline flex items-center mt-4 cursor-pointer text-white hover:text-gray-200 hover:underline">
+                                            <h2 className="text-xl font-semibold text-white 5">The Decorated Ways</h2>
+                                            <p className="mt-2 text-base leading-4 text-white">Dive into minimalism</p>
+                                            <a href="javascript:void(0)" className="flex items-center mt-4 text-white cursor-pointer focus:outline-none focus:underline hover:text-gray-200 hover:underline">
                                                 <p className="pr-2 text-sm font-medium leading-none">Read More</p>
                                                 <svg className="fill-stroke" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M5.75 12.5L10.25 8L5.75 3.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -105,13 +105,13 @@ function Arrival() {
                                     </div>
                                     <img src="https://i.ibb.co/3yvZBpm/img-5.png" className="w-full" alt="chair" />
                                 </div>
-                                <div className="relative w-full sm:mt-0 mt-4 cursor-pointer">
+                                <div className="relative w-full mt-4 cursor-pointer sm:mt-0">
                                     <div>
-                                        <p className="p-6 text-xs font-medium leading-3 text-white absolute top-0 right-0">12 April 2021</p>
+                                        <p className="absolute top-0 right-0 p-6 text-xs font-medium leading-3 text-white">12 April 2021</p>
                                         <div className="absolute bottom-0 left-0 p-6">
-                                            <h2 className="text-xl font-semibold 5 text-white">The Decorated Ways</h2>
-                                            <p className="text-base leading-4 text-white mt-2">Dive into minimalism</p>
-                                            <a href="javascript:void(0)" className="focus:outline-none focus:underline flex items-center mt-4 cursor-pointer text-white hover:text-gray-200 hover:underline">
+                                            <h2 className="text-xl font-semibold text-white 5">The Decorated Ways</h2>
+                                            <p className="mt-2 text-base leading-4 text-white">Dive into minimalism</p>
+                                            <a href="javascript:void(0)" className="flex items-center mt-4 text-white cursor-pointer focus:outline-none focus:underline hover:text-gray-200 hover:underline">
                                                 <p className="pr-2 text-sm font-medium leading-none">Read More</p>
                                                 <svg className="fill-stroke" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M5.75 12.5L10.25 8L5.75 3.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />

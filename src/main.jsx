@@ -9,6 +9,11 @@ import Sign_Up from './Pages/Sign_Up/Sign_Up.jsx'
 import Contact from './Pages/Contact/Contact.jsx'
 import Error from './Pages/ErrorPage/Error.jsx'
 import AddToCart from './Pages/AddToCart/AddToCart.jsx'
+import Log_In from './Pages/Log_In/Log_In.jsx'
+import WishList from './Pages/Wishlist/WishList.jsx'
+import Billing_Details from './Pages/Billing_Details/Billing_Details.jsx'
+import My_Accout from './Pages/My_Account/My_Accout.jsx'
+import Product_Details from './Pages/Product_Details_Page/Product_Details.jsx'
 
 
 const router = createBrowserRouter([
@@ -38,6 +43,27 @@ const router = createBrowserRouter([
       {
         path: '/add-to-cart',
         element: <AddToCart />
+      },
+      {
+        path: '/log-in',
+        element: <Log_In />
+      },
+      {
+        path: '/wishlist',
+        element: <WishList />
+      },
+      {
+        path: '/billing-details',
+        element: <Billing_Details />
+      },
+      {
+        path: '/my-account',
+        element: <My_Accout />
+      }
+      ,
+      {
+        path: '/Products/:details',
+        element: <Product_Details />
       }
     ]
   }
