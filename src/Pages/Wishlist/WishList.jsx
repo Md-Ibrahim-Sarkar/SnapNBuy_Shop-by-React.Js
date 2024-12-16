@@ -4,6 +4,7 @@ import JustForYou from './JustForYou'
 
 function WishList() {
     const { addToCart } = useContext(ShopContext)
+
     return (
         <div className="container p-4 mx-auto">
             <div className="flex items-center justify-between mb-4">
@@ -20,7 +21,7 @@ function WishList() {
                     <div key={item.id} className="p-4 border">
                         {item.discount && <div className="absolute px-2 py-1 text-white bg-red-500">{item.discount}</div>}
                         <div className='relative z-10 group'>
-                            <img src={item.img} alt={item.alt} className="object-cover w-full h-40 mb-4" />
+                            <img src='https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg' alt={item.alt} className="object-cover w-full h-40 mb-4" />
                             <button
                                 className={`absolute bottom-0 left-0 w-full py-2 text-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 ${addToCart.find(item => item.id === product.id) ? 'bg-rose-500' : 'bg-black'
                                     }`}

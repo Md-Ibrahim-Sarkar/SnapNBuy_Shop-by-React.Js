@@ -1,6 +1,8 @@
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable react/no-unknown-property */
 
+import img from '../../../assets/Images/footer banner.png'
+import img3 from '../../../assets/Images/footer banner three.png'
 
 function Arrival() {
     return (
@@ -33,7 +35,7 @@ function Arrival() {
                                             </a>
                                         </div>
                                     </div>
-                                    <img src="https://i.ibb.co/DYxtCJq/img-1.png" className="w-full" alt="chair" />
+                                    <img src={img} className="w-full" alt="chair" />
                                 </div>
                                 <div className="relative mt-4 cursor-pointer sm:w-1/2 sm:mt-0">
                                     <div>
@@ -119,7 +121,7 @@ function Arrival() {
                                             </a>
                                         </div>
                                     </div>
-                                    <img src="https://i.ibb.co/gDdnJb5/img-6.png" className="w-full" alt="wall design" />
+                                    <img src={img3} className="w-full" alt="wall design" />
                                 </div>
                             </div>
                         </div>

@@ -40,7 +40,7 @@ function CartItem({ item }) {
           ))}
         </select>
       </td>
-      <td className="py-2">${item.price * item.quantity}</td>
+      <td className="py-2">${(item.price * item.quantity).toFixed(2)}</td>
       <td className="py-2">
         <button
           onClick={() => handleRemoveItem(item.id)}

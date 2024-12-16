@@ -12,7 +12,7 @@ function Category() {
         { name: 'Phones', icon: Phones },
         { name: 'Computers', icon: Computers},
         { name: 'SmartWatch', icon:SmartWatch },
-        { name: 'Camera', icon: Camera, active: true },
+        { name: 'Camera', icon: Camera,},
         { name: 'HeadPhones', icon: HeadPhones},
         { name: 'Gaming', icon: Gaming},
     ];
@@ -37,7 +37,7 @@ function Category() {
             </div>
             <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6">
                 {categories.map((category, index) => (
-                    <div key={index} className={`flex flex-col items-center justify-center w-full h-32 border hover:shadow-2xl ${category.active ? 'bg-red-500 text-white' : 'text-black'} rounded-lg`}>
+                    <div key={index} className={`flex flex-col items-center justify-center w-full h-32 border hover:shadow-2xl cursor-pointer hover:bg-rose-500 text rounded-lg`}>
                         <img src={category.icon} alt="" />
                         <span className="text-sm">{category.name}</span>
                     </div>
